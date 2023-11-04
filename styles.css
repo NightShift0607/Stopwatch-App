@@ -31,7 +31,7 @@ h1 {
 
 .time {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .stopwatch {
@@ -39,13 +39,13 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
 .timeRing {
     border: 2px solid var(--fontcolor);
-    height: 15rem;
-    width: 15rem;
+    height: 17rem;
+    width: 17rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +74,7 @@ h1 {
 #pauseButton {
     position: relative;
     top: -48px;
-    display: none;
+    visibility: hidden;
 }
 
 #playButton:hover {
