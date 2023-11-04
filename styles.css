@@ -1,0 +1,118 @@
+:root {
+    --bgcolor: #363062;
+    --fontcolor: #F5E8C7;
+    --highlighter: #818FB4;
+}
+
+body {
+    background-color: var(--bgcolor);
+    color: var(--fontcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: var(--fontcolor);
+    text-decoration: none;
+}
+
+a > i:hover {
+    color: var(--highlighter);
+    transform: scale(1.5);
+    transition: transform 0.5s;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+.time {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5rem;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.timeRing {
+    border: 2px solid var(--fontcolor);
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.controls {
+    display: inline-flex;
+    width: 10rem;
+    height: 3rem;
+    margin: 2rem auto;
+}
+
+.btn {
+    font-size: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.play_pause {
+    width: fit-content;
+    margin-right: 4rem;
+    color: var(--highlighter);
+}
+
+#pauseButton {
+    position: relative;
+    top: -48px;
+    display: none;
+}
+
+#playButton:hover {
+    color: var(--bgcolor);
+    background-color: var(--fontcolor);
+    transition: all 0.3s;
+}
+
+#pauseButton:hover {
+    color: var(--bgcolor);
+    background-color: var(--fontcolor);
+    transition: all 0.3s;
+}
+
+#stopButton:hover {
+    color: var(--bgcolor);
+    background-color: var(--fontcolor);
+    transition: all 0.3s;
+}
+
+footer {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    justify-content: space-around;
+}
+
+footer > img {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+footer > img:hover {
+    content: url("./images/logo2.png");
+}
+
+.foot {
+    margin: 0 4rem;
+}
